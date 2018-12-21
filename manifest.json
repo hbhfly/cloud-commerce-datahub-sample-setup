@@ -1,33 +1,177 @@
 {
-    "datahub_version" : "6.7.0.1-RC1",
-    "extensions" : [
-        "ccv2-example",
+    "commerceSuiteVersion": "6.7.0.1",
+    "extensions": [
+        "ycommercewebservices",
+		"acceleratorwebservicesaddon",
+        "backoffice",
+        "platformbackoffice",
+        "modeltacceleratorservices",
+        "electronicsstore",
+        "datahubadapter",
+        "datahubbackoffice",
+        "secureportaladdon",
+        "sapcoreaddon",
+        "sapcoreconfigurationbackoffice",
+        "sapmodel",
+        "sapmodelbackoffice",
+        "b2bsapproductavailability",
+        "sapproductavailabilitybackoffice",
+        "sapproductavailability",
+        "sapcustomerb2c"
+    ],
+    "storefrontAddons": [
+		{
+		    "addon": "acceleratorwebservicesaddon",
+		    "storefront": "ycommercewebservices",
+		    "template": "albinostorefront"
+		}
+    ],
+    "properties": [
+        {
+            "key": "lang.packs",
+            "value": "de,en,es,es_CO,fr,it,ja,ko,pt,ru,zh,zh_TW,hi,id,cs,cy"
+        },
+        {
+            "key": "test.property.1",
+            "value": "test-property-1-value-prod",
+            "persona": "production"
+        },
+        {
+            "key": "test.property.1",
+            "value": "test-property-1-value-dev",
+            "persona": "development"
+        },
+        {
+            "key": "test.property.1",
+            "value": "test-property-1-value"
+        },
+        {
+            "key": "test.property.2",
+            "value": "test-property-2-value"
+        }
+    ],
+    "aspects": [
+        {
+            "name": "backoffice",
+            "properties": [
+                {
+                    "key": "test.property.1",
+                    "value": "test.property-1-value-prod-backoffice",
+                    "persona": "production"
+                },
+                {
+                    "key": "test.property.2",
+                    "value": "test.property-2-value-backoffice"
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": "/backoffice"
+                },
+                {
+                    "name": "datahubadapter",
+                    "contextPath": "/datahubadapter"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                }
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.albinostorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.albinostorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.albinostorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "albinostorefront",
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": ""
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "datahubadapter",
+                    "contextPath": "/datahubadapter"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                }
 
-        "com.hybris.datahub:sapcoreconfiguration:6.7.0.0-RC1",
-
-        "com.hybris.datahub:sapcustomer-canonical:6.7.0.0-RC1",
-        "com.hybris.datahub:sapcustomer-raw:6.7.0.0-RC1",
-        "com.hybris.datahub:sapcustomer-target:6.7.0.0-RC1",
-
-        "com.hybris.datahub:party-canonical:6.7.0.0-RC1",
-
-        "com.hybris.datahub:saperpproduct-canonical:6.7.0.0-RC1",
-        "com.hybris.datahub:saperpproduct-raw:6.7.0.0-RC1",
-        "com.hybris.datahub:saperpproduct-target:6.7.0.0-RC1",
-
-        "com.hybris.datahub:product-canonical:6.7.0.0-RC1",
-
-        "com.hybris.datahub:sappricing-canonical:6.7.0.0-RC1",
-        "com.hybris.datahub:sappricing-canonical-bonusbuy:6.7.0.0-RC1",
-        "com.hybris.datahub:sappricing-raw:6.7.0.0-RC1",
-        "com.hybris.datahub:sappricing-target:6.7.0.0-RC1",
-
-        "com.hybris.datahub:saporder-canonical:6.7.0.0-RC1",
-        "com.hybris.datahub:saporder-raw:6.7.0.0-RC1",
-        "com.hybris.datahub:saporder-target:6.7.0.0-RC1",
-
-        "com.hybris.datahub:sapidocintegration:6.7.0.0-RC1",
-        "com.hybris.datahub:sapidocoutboundadapter:6.7.0.0-RC1"
-
-    ]
+            ]
+        }
+    ],
+    "tests": {
+        "extensions": [
+            "albinoaddon"
+        ],
+        "annotations": [
+            "UnitTests",
+            "IntegrationTests"
+        ],
+        "packages": [
+            "com.acme.*"
+        ]
+    },
+    "webTests": {
+        "extensions": [
+            "albinostorefront"
+        ],
+        "excludedPackages": [
+            "de.hybris.*"
+        ]
+    }
 }
