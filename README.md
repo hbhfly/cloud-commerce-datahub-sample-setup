@@ -4,9 +4,9 @@ You can clone this sample repository and then update the example files with your
 
 ### Prerequisites
 
-	•	You have a public-facing code repository.
-	•	You have an active SAP Commerce Cloud subscription that includes Data Hub.
-	•	You have not set up SAP Commerce Cloud yet.  Once Commerce Cloud is installed, you cannot go back and add Data Hub.  If you already installed Commerce Cloud, contact the Support team for assistance.
+- You have a public-facing code repository.
+- You have an active SAP Commerce Cloud subscription that includes Data Hub.
+- You have not set up SAP Commerce Cloud yet.  Once Commerce Cloud is installed, you cannot go back and add Data Hub.  If you already installed Commerce Cloud, contact the Support team for assistance.
 
 ## Versioning
 Data Hub is supported with all versions of SAP Commerce that are supported by SAP Commerce Cloud. 
@@ -43,11 +43,11 @@ Clone the sample repository. The files are copied to your local machine.
 
 ### Update the Custom Extensions
 
-	1.	Update the <custom-extension> folder.
-	⁃	Change the generic folder name to the name of your custom extension. 
-	⁃	Add the extension configuration information to the folder.
-	2.	Repeat these steps for each custom extension.
-	3.	If you don’t have custom extensions, you can delete the <custom-extension> folder.
+1.	Update the <custom-extension> folder.
+	1.	Change the generic folder name to the name of your custom extension. 
+	2.	Add the extension configuration information to the folder.
+2.	Repeat these steps for each custom extension.
+3.	If you don’t have custom extensions, you can delete the <custom-extension> folder.
 
 ### Update the Data Hub manifest.json
 
