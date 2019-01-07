@@ -30,7 +30,7 @@ Root level
 
 datahub folder
 - manifest.json: The Data Hub manifest.json file that defines the Data Hub application and extensions.
-- <custom-extension> folder: A generic folder that you can build out for custom extensions.
+- ccv2 example folder: A generic folder that you can build out for custom extensions.
 - config folder: The folder that contains the Data Hub configuration files and folders.
 
 config folder
@@ -46,7 +46,7 @@ Clone the sample repository. The files are copied to your local machine.
 
 ### Update the Custom Extensions
 
-1. Update the <custom-extension> folder.
+1. Update the ccv2 example folder that is used for custom extensions.
  - Change the generic folder name to the name of your custom extension. 
  - Add the extension configuration information to the folder.
 2. Repeat these steps for each custom extension.
