@@ -1,21 +1,24 @@
 # SAP Commerce Cloud Sample Repository for Data Hub
 
-You can clone this sample repository and then update the example files with your specific Data Hub details. When your files are ready, push them to your SAP Commerce Cloud repository.  Data Hub is automatically deployed when SAP Commerce Cloud is set up. 
+This sample repository contains the files and folders that are required to set up Data Hub in SAP Commerce Cloud.  You can clone this sample repository and then update the example files with your specific Data Hub details. 
 
-### Prerequisites
+When your files are ready, push them to your SAP Commerce Cloud repository.  Data Hub is automatically deployed when SAP Commerce Cloud is set up. 
+
+### Requirements
 
 - You have a public-facing code repository.
-- You have an active SAP Commerce Cloud subscription that includes Data Hub.
+- You have an active SAP Commerce Cloud subscription that includes Data Hub version 6.7.0.0 or higher.
+- You have a license for SAP Commerce version 1808 or higher.
 - You have not set up SAP Commerce Cloud yet.  Once Commerce Cloud is installed, you cannot go back and add Data Hub.  If you already installed Commerce Cloud, contact the Support team for assistance.
 
-## Versioning
+## Supported Versions
 Data Hub is supported with all versions of SAP Commerce that are supported by SAP Commerce Cloud. 
 
 You can find the supported SAP Commerce versions listed in the Compatibility help topic at https://help.hybris.com/scc/pcd/31ac209eb08f41bc92e9bbe5772fb949.html.
 
 The version of Data Hub does not have to match the version of SAP Commerce.  Use the most recent version of Data Hub.
 
-## Getting Started
+## Configuration
 
 These instructions walk you through the process of cloning the repository and then updating the sample files with your specific Data Hub requirements. 
 
