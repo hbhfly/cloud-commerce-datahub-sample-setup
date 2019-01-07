@@ -4,40 +4,40 @@ This sample repository contains the files and folders that are required to set u
 
 When your files are ready, push them to your SAP Commerce Cloud repository.  Data Hub is automatically deployed when SAP Commerce Cloud is set up. 
 
-### Requirements
+# Requirements
 
 - You have a public-facing code repository.
 - You have an active SAP Commerce Cloud subscription that includes Data Hub version 6.7.0.0 or higher.
 - You have a license for SAP Commerce version 1808 or higher.
 - You have not set up SAP Commerce Cloud yet.  Once Commerce Cloud is installed, you cannot go back and add Data Hub.  If you already installed Commerce Cloud, contact the Support team for assistance.
 
-## Supported Versions
+# Supported Versions
 Data Hub is supported with all versions of SAP Commerce that are supported by SAP Commerce Cloud. 
 
 You can find the supported SAP Commerce versions listed in the Compatibility help topic at https://help.hybris.com/scc/pcd/31ac209eb08f41bc92e9bbe5772fb949.html.
 
 The version of Data Hub does not have to match the version of SAP Commerce.  Use the most recent version of Data Hub.
 
-## Configuration
+# Configuration
 
 These instructions walk you through the process of cloning the repository and then updating the sample files with your specific Data Hub requirements. 
 
 The following folders and files are included in the sample repository.
 
-  Root level 
-	•	manifest.json: The Commerce Cloud manifest.json that includes required Data Hub properties.
-	•	datahub folder: This folder contains all of the folders and files that support Data Hub.
+Root level 
+- manifest.json: The Commerce Cloud manifest.json that includes required Data Hub properties.
+- datahub folder: This folder contains all of the folders and files that support Data Hub.
 
-  datahub folder
-	•	manifest.json: The Data Hub manifest.json file that defines the Data Hub application and extensions.
-	•	<custom-extension> folder: This folder is a generic folder that you can build out for custom extensions.
-	•	config folder: This folder contains the Data Hub configuration files and folders.
+datahub folder
+- manifest.json: The Data Hub manifest.json file that defines the Data Hub application and extensions.
+- <custom-extension> folder: This folder is a generic folder that you can build out for custom extensions.
+- config folder: This folder contains the Data Hub configuration files and folders.
 
-  config folder
-	•	lib folder: An optional folder where you can add pre-compiled extensions.  The JAR files and Java libraries that support the pre-compiled extensions should reside in this folder.
-	•	logback.xml: This file defines logging details.
-	•	datahub-environment.conf: This file contains the properties shared by all environments in a basic Data Hub configuration.
-	•	datahub-environment-[environment_code].conf: This file contains unique properties that are assigned to specific environments.
+config folder
+- lib folder: An optional folder where you can add pre-compiled extensions.  The JAR files and Java libraries that support the pre-compiled extensions should reside in this folder.
+- logback.xml: This file defines logging details.
+- datahub-environment.conf: This file contains the properties shared by all environments in a basic Data Hub configuration.
+- datahub-environment-[environment_code].conf: This file contains unique properties that are assigned to specific environments.
 
 ### Clone Repository
 
@@ -47,7 +47,7 @@ Clone the sample repository. The files are copied to your local machine.
 ### Update the Custom Extensions
 
 1.	Update the <custom-extension> folder.
-	1.	Change the generic folder name to the name of your custom extension. 
+	- Change the generic folder name to the name of your custom extension. 
 	2.	Add the extension configuration information to the folder.
 2.	Repeat these steps for each custom extension.
 3.	If you don’t have custom extensions, you can delete the <custom-extension> folder.
@@ -136,8 +136,23 @@ Pre-compiled extensions are extensions such as Marketplace extensions.  These ex
 
 Use the Cloud Portal to create a build and then deploy the build to an environment. The configuration you added to the Commerce Cloud repository is used to create Data Hub. After the build is deployed, you can find the Data Hub endpoint in the Environments page of the Cloud Portal.  
 
-### More Information
+# Limitations
 
-Find more information on SAP Commerce Cloud and Data Hub in the SAP Commerce Cloud help at https://help.hybris.com/scc/pcd/ab9cf3c375a8407f8a5f548b8a379311.html.
+The repository must be a public-facing repository.  You cannot use a private repository to host SAP Commerce Cloud and Data Hub configurations.
+
+# Known Issues
+
+No known issues at this time.
+
+# Support
+
+Find information on obtaining support at https://help.sap.com/viewer/DRAFT/9bf769bfb57340e8b568f19e596ba9b4/DEV/en-US/a118beceb4c3429bbc7c5cf46c6256a5.html.
+
+Find more information on SAP Commerce Cloud and Data Hub in the SAP Commerce Cloud from the help at https://help.hybris.com/scc/pcd/ab9cf3c375a8407f8a5f548b8a379311.html.
+
+# License
+This repository is only available to SAP Commerce Cloud customers.  Code contributions come directly from SAP.  No third-party contributions are accepted. 
+
+
 
 
