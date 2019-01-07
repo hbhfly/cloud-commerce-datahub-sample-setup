@@ -1,6 +1,6 @@
 # SAP Commerce Cloud Sample Repository for Data Hub
 
-This sample repository contains the files and folders that are required to set up Data Hub in SAP Commerce Cloud.  You can clone this sample repository and then update the example files with your specific Data Hub details. 
+This sample repository contains the files and folders that are required to set up Data Hub in SAP Commerce Cloud.  You can clone this sample repository and then follow the instructions in this readme to update the example files with your specific Data Hub details. 
 
 When your files are ready, push them to your SAP Commerce Cloud repository.  Data Hub is automatically deployed when SAP Commerce Cloud is set up. 
 
@@ -25,19 +25,19 @@ These instructions walk you through the process of cloning the repository and th
 The following folders and files are included in the sample repository.
 
 Root level 
-- manifest.json: The Commerce Cloud manifest.json that includes required Data Hub properties.
-- datahub folder: This folder contains all of the folders and files that support Data Hub.
+- manifest.json: The SAP Commerce Cloud manifest.json that includes required Data Hub properties.
+- datahub folder: The folder that contains all of the folders and files that support Data Hub.
 
 datahub folder
 - manifest.json: The Data Hub manifest.json file that defines the Data Hub application and extensions.
-- <custom-extension> folder: This folder is a generic folder that you can build out for custom extensions.
-- config folder: This folder contains the Data Hub configuration files and folders.
+- <custom-extension> folder: A generic folder that you can build out for custom extensions.
+- config folder: The folder that contains the Data Hub configuration files and folders.
 
 config folder
 - lib folder: An optional folder where you can add pre-compiled extensions.  The JAR files and Java libraries that support the pre-compiled extensions should reside in this folder.
-- logback.xml: This file defines logging details.
-- datahub-environment.conf: This file contains the properties shared by all environments in a basic Data Hub configuration.
-- datahub-environment-[environment_code].conf: This file contains unique properties that are assigned to specific environments.
+- logback.xml: The file that defines logging details.
+- datahub-environment.conf: The file that contains the properties shared by all environments in a basic Data Hub configuration.
+- datahub-environment-[environment_code].conf: The file that contains unique properties that are assigned to specific environments.
 
 ### Clone Repository
 
@@ -55,7 +55,7 @@ Clone the sample repository. The files are copied to your local machine.
 ### Update the Data Hub manifest.json
 
 1. Open the manifest.json file inside the datahub folder.  This is the Data Hub manifest.json. 
-2. Update the “datahub_version” with the version of Data Hub that you plan to use. Refer to the Version section of this readme for more information.
+2. Update the “datahub_version” with the version of Data Hub that you plan to use. Refer to the Supported Versions section of this readme for more information.
 3. Save the changes.
 
 ### Update the Data Hub Environment Configuration File
@@ -83,7 +83,7 @@ Clone the sample repository. The files are copied to your local machine.
 
 ### Add Optional Pre-complied Extensions
 
-Pre-compiled extensions are extensions such as Marketplace extensions.  These extensions are added to the lib folder. 
+Pre-compiled extensions are extensions such as Marketplace extensions.  If needed, these extensions are added to the lib folder. 
 
 1. Open the config folder.
 2. Open lib folder.
@@ -95,7 +95,7 @@ Pre-compiled extensions are extensions such as Marketplace extensions.  These ex
 1. Make sure that you have openSSL installed on your local machine.
 2. Open a terminal window and run the following command to generate a 128-bit AES key.
  - openssl enc -aes-128-ecb -k secret -P -md sha1
-3. Verify that you see a result that includes values for “salt” and “key”
+3. Verify that you see a result that includes values for “salt” and “key”.
 4. Copy the string that displays after “key=“.  Do not include “key=“.
 5. Paste the string into a new text file.
 6. Save the file with the name “encryption-key.txt”.
@@ -108,7 +108,7 @@ Pre-compiled extensions are extensions such as Marketplace extensions.  These ex
 3. Copy your x509 certificate to the trusted-certificates folder.  
 4. Verify that the file has a .cer extension and is in ASCII pem encoded format.
 
-### Add Commerce Cloud manifest to the Commerce Cloud code repository ##To Do: Determine how to explain the manifest updates to an existing commerce manifest.
+### Add Commerce Cloud manifest to the Commerce Cloud code repository
 
 1. Find the manifest.json file at the root level of the sample repository. This is the Commerce Cloud manifest that includes required Data Hub properties.
 2. In the Commerce Cloud repository root directory, replace the existing manifest.json file with this manifest.json.
