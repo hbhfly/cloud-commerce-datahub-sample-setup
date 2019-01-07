@@ -54,87 +54,89 @@ Clone the sample repository. The files are copied to your local machine.
 
 ### Update the Data Hub manifest.json
 
-	1.	Open the manifest.json file inside the datahub folder.  This is the Data Hub manifest.json. 
-	2.	Update the “datahub_version” with the version of Data Hub that you plan to use. Refer to the Version section of this readme for more information.
-	3.	Save the changes.
+1. Open the manifest.json file inside the datahub folder.  This is the Data Hub manifest.json. 
+2. Update the “datahub_version” with the version of Data Hub that you plan to use. Refer to the Version section of this readme for more information.
+3. Save the changes.
 
 ### Update the Data Hub Environment Configuration File
 
-	1.	Open the config folder.
-	2.	Find the datahub-environment.conf file.
-	3.	Open the configuration file and replace the default user names and passwords with the values that support your environment.
-	4.	Save the changes. 
+1. Open the config folder.
+2. Find the datahub-environment.conf file.
+3. Open the configuration file and replace the default user names and passwords with the values that support your environment.
+4. Save the changes. 
 
 ### Add an Optional Environment Variable File for Environments that Require Unique Properties
 
-	1.	Open the config folder.
-	2.	Open the datahub-environment-[environment_code].conf file.
-	3.	Add environment properties for each unique property that you want to apply to the environment.
-	4.	Name the file datahub-environment[environment_code].conf.
-	⁃	To find the environment code for an environment, see the instructions in the SAP Commerce Cloud help at https://help.hybris.com/scc/pcd/1f6dfab4981347db8ab221acaf37960f.html.
-	5.	Create a separate datahub-environment-[environment_code].conf file for each environment that requires unique properties.
-	6.	If you do not need unique environment variables, delete the datahub-environment[environment_code].conf file.
+1. Open the config folder.
+2. Open the datahub-environment-[environment_code].conf file.
+3. Add environment properties for each unique property that you want to apply to the environment.
+4. Name the file datahub-environment[environment_code].conf.
+ - To find the environment code for an environment, see the instructions in the SAP Commerce Cloud help at https://help.hybris.com/scc/pcd/1f6dfab4981347db8ab221acaf37960f.html.
+5. Create a separate datahub-environment-[environment_code].conf file for each environment that requires unique properties.
+6. If you do not need unique environment variables, delete the datahub-environment[environment_code].conf file.
 
 ### Verify the logback.xml file
 
-	1.	Open the config folder.
-	2.	Verify that the logback.xml file is inside the config folder.
-	3.	DO NOT overwrite the <appender name=STDOUT> section of the logback.xml file.  This section is required if you want to access Data Hub logs in Kibana.
+1. Open the config folder.
+2. Verify that the logback.xml file is inside the config folder.
+3. DO NOT overwrite the <appender name=STDOUT> section of the logback.xml file.  This section is required if you want to access Data Hub logs in Kibana.
 
 ### Add Optional Pre-complied Extensions
 
 Pre-compiled extensions are extensions such as Marketplace extensions.  These extensions are added to the lib folder. 
 
-	1.	Open the config folder.
-	2.	Open lib folder.
-	3.	Add the JAR files and Java libraries that support the pre-compiled extensions. 
-	4.	If you are not using pre-compiled extensions, delete the lib folder.
+1. Open the config folder.
+2. Open lib folder.
+3. Add the JAR files and Java libraries that support the pre-compiled extensions. 
+4. If you are not using pre-compiled extensions, delete the lib folder.
 
 ### Create the encryption key
 
-	1.	Make sure that you have openSSL installed on your local machine.
-	2.	Open a terminal window and run the following command to generate a 128-bit AES key.
-          openssl enc -aes-128-ecb -k secret -P -md sha1
-	3.	Verify that you see a result that includes values for “salt” and “key”
-	4.	Copy the string that displays after “key=“.  Do not include “key=“.
-	5.	Paste the string into a new text file.
-	6.	Save the file with the name “encryption-key.txt”.
-	7.	Move the file to the config folder.
+1. Make sure that you have openSSL installed on your local machine.
+2. Open a terminal window and run the following command to generate a 128-bit AES key.
+ - openssl enc -aes-128-ecb -k secret -P -md sha1
+3. Verify that you see a result that includes values for “salt” and “key”
+4. Copy the string that displays after “key=“.  Do not include “key=“.
+5. Paste the string into a new text file.
+6. Save the file with the name “encryption-key.txt”.
+7. Move the file to the config folder.
 
 ### Add an SSL Certificate for Secure Communication between Data Hub and Third-Party Systems
 
-	1.	Open the config folder.
-	2.	Create a folder named “trusted-certificates”.
-	3.	Copy your x509 certificate to the trusted-certificates folder.  
-	4.	Verify that the file has a .cer extension and is in ASCII pem encoded format.
+1. Open the config folder.
+2. Create a folder named “trusted-certificates”.
+3. Copy your x509 certificate to the trusted-certificates folder.  
+4. Verify that the file has a .cer extension and is in ASCII pem encoded format.
 
 ### Add Commerce Cloud manifest to the Commerce Cloud code repository ##To Do: Determine how to explain the manifest updates to an existing commerce manifest.
 
-	1.	Find the manifest.json file at the root level of the sample repository. This is the Commerce Cloud manifest that includes required Data Hub properties.
-	2.	In the Commerce Cloud repository root directory, replace the existing manifest.json file with this manifest.json.
-	3.	Make sure that the version of Commerce Cloud identified in the first line of the manifest file is the version that you plan to use.
+1. Find the manifest.json file at the root level of the sample repository. This is the Commerce Cloud manifest that includes required Data Hub properties.
+2. In the Commerce Cloud repository root directory, replace the existing manifest.json file with this manifest.json.
+3. Make sure that the version of Commerce Cloud identified in the first line of the manifest file is the version that you plan to use.
 
 ### Prepare to Push the Sample Repository
  
-	1.	In the sample repository, verify that you have the following files in the datahub folder.
-	⁃	manifest.json:  This is the manifest.json for Data Hub.
-	⁃	<custom extension> folder (optional)
-	⁃	config folder
-	⁃	lib folder (optional)
-	⁃	logback.xml
-	⁃	datahub-environment.conf
-	⁃	datahub-environment-[environment_code].conf (optional)
-	⁃	encryption-key.txt
-	⁃	trusted-certificate folder
-	⁃	.cer file with x509 certificate
+In the sample repository, verify that you have the following files in the datahub folder.
+ - manifest.json:  This is the manifest.json for Data Hub.
+ - <custom extension> folder (optional)
+ - config folder
+ - lib folder (optional)
+ - logback.xml
+ - datahub-environment.conf
+ - datahub-environment-[environment_code].conf (optional)
+ - encryption-key.txt
+ - trusted-certificate folder
+ - .cer file with x509 certificate
 
 ### Push Data Hub Configuration to Commerce Cloud Code Repository
 
-	1.	In the Commerce Cloud root directory, push the data hub folder from your local machine to your Commerce Cloud repository.  
+In the Commerce Cloud root directory, push the data hub folder from your local machine to your Commerce Cloud repository.  
 
 ### Final Steps
 
-Use the Cloud Portal to create a build and then deploy the build to an environment. The configuration you added to the Commerce Cloud repository is used to create Data Hub. After the build is deployed, you can find the Data Hub endpoint in the Environments page of the Cloud Portal.  
+Use the Cloud Portal to create a build and then deploy the build to an environment. The configuration you added to the Commerce Cloud repository is used to create Data Hub. 
+
+After the build is deployed, you can find the Data Hub endpoint in the Environments page of the Cloud Portal.  
 
 # Limitations
 
