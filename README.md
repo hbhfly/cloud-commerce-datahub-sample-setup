@@ -46,11 +46,11 @@ Clone the sample repository. The files are copied to your local machine.
 
 ### Update the Custom Extensions
 
-1.	Update the <custom-extension> folder.
-	- Change the generic folder name to the name of your custom extension. 
-	2.	Add the extension configuration information to the folder.
-2.	Repeat these steps for each custom extension.
-3.	If you don’t have custom extensions, you can delete the <custom-extension> folder.
+1. Update the <custom-extension> folder.
+ - Change the generic folder name to the name of your custom extension. 
+ - Add the extension configuration information to the folder.
+2. Repeat these steps for each custom extension.
+3. If you don’t have custom extensions, you can delete the <custom-extension> folder.
 
 ### Update the Data Hub manifest.json
 
