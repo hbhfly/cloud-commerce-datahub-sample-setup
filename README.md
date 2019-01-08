@@ -1,6 +1,6 @@
 # SAP Commerce Cloud Sample Repository for Data Hub
 
-This sample repository contains the files and folders that are required to set up Data Hub in SAP Commerce Cloud.  You can clone this sample repository and then follow the instructions in this readme to update the example files with your specific Data Hub details. 
+This sample repository contains the files and folders that are required to set up Data Hub in SAP Commerce Cloud.  You can clone this repository and then follow the instructions in the readme to update the example files with your specific Data Hub details. 
 
 When your files are ready, push them to your SAP Commerce Cloud repository.  Data Hub is automatically deployed when SAP Commerce Cloud is set up. 
 
@@ -79,14 +79,14 @@ Clone the sample repository. The files are copied to your local machine.
 
 1. Open the config folder.
 2. Verify that the logback.xml file is inside the config folder.
-3. DO NOT overwrite the <appender name=STDOUT> section of the logback.xml file.  This section is required if you want to access Data Hub logs in Kibana.
+3. DO NOT overwrite the "appender name=STDOUT" section of the logback.xml file.  This section is required if you want to access Data Hub logs in Kibana.
 
 ### Add Optional Pre-complied Extensions
 
 Pre-compiled extensions are extensions such as Marketplace extensions.  If needed, these extensions are added to the lib folder. 
 
 1. Open the config folder.
-2. Open lib folder.
+2. Open the lib folder.
 3. Add the JAR files and Java libraries that support the pre-compiled extensions. 
 4. If you are not using pre-compiled extensions, delete the lib folder.
 
@@ -108,7 +108,7 @@ Pre-compiled extensions are extensions such as Marketplace extensions.  If neede
 3. Copy your x509 certificate to the trusted-certificates folder.  
 4. Verify that the file has a .cer extension and is in ASCII pem encoded format.
 
-### Add Commerce Cloud manifest to the Commerce Cloud code repository
+### Add the Commerce Cloud manifest to the Commerce Cloud code repository
 
 1. Find the manifest.json file at the root level of the sample repository. This is the Commerce Cloud manifest that includes required Data Hub properties.
 2. In the Commerce Cloud repository root directory, replace the existing manifest.json file with this manifest.json.
@@ -128,9 +128,9 @@ In the sample repository, verify that you have the following files in the datahu
  - trusted-certificate folder
  - .cer file with x509 certificate
 
-### Push Data Hub Configuration to Commerce Cloud Code Repository
+### Push the Data Hub Configuration to Commerce Cloud Code Repository
 
-In the Commerce Cloud root directory, push the data hub folder from your local machine to your Commerce Cloud repository.  
+Push the data hub folder from your local machine to the root level of your Commerce Cloud repository.  
 
 ### Final Steps
 
