@@ -18,6 +18,9 @@ You can find the supported SAP Commerce versions listed in the Compatibility hel
 
 The version of Data Hub does not have to match the version of SAP Commerce.  Use the most recent version of Data Hub.
 
+# Download and Installation
+Not applicable
+
 # Configuration
 
 These instructions walk you through the process of cloning the repository and then updating the sample files with your specific Data Hub requirements. 
@@ -140,20 +143,23 @@ After the build is deployed, you can find the Data Hub endpoint in the Environme
 
 # Limitations
 
-The repository must be a public-facing repository.  You cannot use a private repository to host SAP Commerce Cloud and Data Hub configurations.
+The repository must be a public-facing repository.  You cannot use a private repository to host SAP Commerce Cloud and Data Hub configurations. 
 
 # Known Issues
 
-No known issues at this time.
+The repository should support SSH protocol.  HTTPS is not supported at this time.
 
-# Support
+# How to Obtain Support
 
 Find information on obtaining support at https://help.sap.com/viewer/DRAFT/9bf769bfb57340e8b568f19e596ba9b4/DEV/en-US/a118beceb4c3429bbc7c5cf46c6256a5.html.
 
 Find more information on SAP Commerce Cloud and Data Hub in the SAP Commerce Cloud from the help at https://help.hybris.com/scc/pcd/ab9cf3c375a8407f8a5f548b8a379311.html.
 
 # License
-This repository is only available to SAP Commerce Cloud customers.  Code contributions come directly from SAP.  No third-party contributions are accepted. 
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+This file is licensed under the “SAP Sample Code License” except as noted otherwise in the LICENSE file at https://github.com/SAP/cloud-commerce-datahub-sample-setup/blob/master/LICENSE.md.
+
+
 
 
 
