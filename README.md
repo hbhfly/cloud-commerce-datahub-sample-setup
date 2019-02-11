@@ -44,7 +44,7 @@ config folder
 
 ### Clone Repository
 
-Clone the sample repository. The files are copied to your local machine.
+Clone the sample repository ([instructions can be found here](https://help.github.com/articles/cloning-a-repository/)). The files are copied to your local machine.
 
 
 ### Update the Custom Extensions
