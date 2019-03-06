@@ -151,7 +151,7 @@ The repository should support SSH protocol.  HTTPS is not supported at this time
 
 # How to Obtain Support
 
-Find information on obtaining support at https://help.sap.com/viewer/DRAFT/9bf769bfb57340e8b568f19e596ba9b4/DEV/en-US/a118beceb4c3429bbc7c5cf46c6256a5.html.
+This repository is provided "as-is"; no support is available.
 
 Find more information on SAP Commerce Cloud and Data Hub in the SAP Commerce Cloud from the help at https://help.hybris.com/scc/pcd/ab9cf3c375a8407f8a5f548b8a379311.html.
 
