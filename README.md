@@ -97,7 +97,11 @@ Pre-compiled extensions are extensions such as Marketplace extensions.  If neede
 
 1. Make sure that you have openSSL installed on your local machine.
 2. Open a terminal window and run the following command to generate a 128-bit AES key.
- - openssl enc -aes-128-ecb -k secret -P -md sha1
+
+```bash
+$ openssl enc -aes-128-ecb -k secret -P -md sha1
+```
+
 3. Verify that you see a result that includes values for “salt” and “key”.
 4. Copy the string that displays after “key=“.  Do not include “key=“.
 5. Paste the string into a new text file.
