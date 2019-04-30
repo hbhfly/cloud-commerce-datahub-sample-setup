@@ -58,6 +58,7 @@ Clone the sample repository ([instructions can be found here](https://help.githu
   - Open the datahub/config/lib folder.
   - Add the JAR files and Java libraries that support the pre-compiled extension.
   - Open the pom.xml file of the custom extension and add a line in the dependency section for *systemPath* with the path to the lib folder. 
+ 5. List the extensions in the Data Hub manifest.json file. If you have custom extensions with dependencies, list the source extension first, then the dependent extension. Extensions are built in the order in which they appear in the manifest.
 
 ### Update the Data Hub manifest.json
 
