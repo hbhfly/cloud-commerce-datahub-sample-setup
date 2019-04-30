@@ -37,7 +37,7 @@ datahub folder
 - config folder: The folder that contains the Data Hub configuration files and folders.
 
 config folder
-- lib folder: An optional folder where you can add pre-compiled extensions.  The JAR files and Java libraries that support the pre-compiled extensions should reside in this folder.
+- lib folder: An optional folder where you can add pre-compiled extensions.  The JAR files and Java libraries that support the pre-compiled extensions should reside in this folder. If you have extensions with dependencies, put the source extension in this folder. The dependent extension goes in the corresponding custom extension folder.
 - logback.xml: The file that defines logging details.
 - datahub-environment.conf: The file that contains the properties shared by all environments in a basic Data Hub configuration.
 - datahub-environment-[environment_code].conf: The file that contains unique properties that are assigned to specific environments.
@@ -50,10 +50,14 @@ Clone the sample repository ([instructions can be found here](https://help.githu
 ### Update the Custom Extensions
 
 1. Update the ccv2 example folder that is used for custom extensions.
- - Change the generic folder name to the name of your custom extension. 
+ - Change the generic folder name to the name of your custom extension. The folder name and extension name must match.
  - Add the extension configuration information to the folder.
 2. Repeat these steps for each custom extension.
 3. If you don’t have custom extensions, you can delete the <custom-extension> folder.
+4. If you plan to use pre-compiled extensions, such as Marketplace extensions or java source libraries, add them to the repository.
+  - Open the datahub/config/lib folder.
+  - Add the JAR files and Java libraries that support the pre-compiled extension.
+  - Open the pom.xml file of the custom extension and add a line in the dependency section for *systemPath* with the path to the lib folder. 
 
 ### Update the Data Hub manifest.json
 
