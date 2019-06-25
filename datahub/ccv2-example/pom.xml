@@ -20,7 +20,7 @@
 	<parent>
 		<artifactId>datahub</artifactId>
 		<groupId>com.hybris.datahub</groupId>
-		<version>19.05</version>
+		<version>19.05.0-RC7</version>
 	</parent>
 
 	<artifactId>ccv2-debug</artifactId>
@@ -34,7 +34,7 @@
 		<spring.version>4.3.11.RELEASE</spring.version>
 		<prometheus.version>0.0.21</prometheus.version>
 		<additionalparam>-Xdoclint:none</additionalparam>
-    <datahub.version>6.7.0.1-RC1</datahub.version>
+    		<datahub.version>19.05.0-RC7</datahub.version>
 	</properties>
 
 	<dependencies>
