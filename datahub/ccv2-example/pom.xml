@@ -20,7 +20,7 @@
 	<parent>
 		<artifactId>datahub</artifactId>
 		<groupId>com.hybris.datahub</groupId>
-		<version>6.7.0.1-RC1</version>
+		<version>19.05</version>
 	</parent>
 
 	<artifactId>ccv2-debug</artifactId>
@@ -28,8 +28,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jre.source.version>1.8</jre.source.version>
-		<jre.target.version>1.8</jre.target.version>
+		<jre.source.version>1.11</jre.source.version>
+		<jre.target.version>1.11</jre.target.version>
 		<maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
 		<spring.version>4.3.11.RELEASE</spring.version>
 		<prometheus.version>0.0.21</prometheus.version>
