@@ -156,7 +156,7 @@ The repository must be a public-facing repository.  You cannot use a private rep
 
 # Known Issues
 
-The repository should support SSH protocol.  HTTPS is not supported at this time.
+There are no known issues at this time.
 
 # How to Obtain Support
 
